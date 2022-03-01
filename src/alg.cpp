@@ -33,12 +33,14 @@ return s;
 double sinn(double x, uint16_t count) {
 double s = 0;
 for (int i = count; i > 0; i--) {
-  return s+=pown((-1), i - 1) * pown(x, 2 * i - 1) / fact(2*i-1);
-}
+  s+=pown((-1), i - 1) * pown(x, 2 * i - 1) / fact(2*i-1);
+  }
+  return s;
 }
 double cosn(double x, uint16_t count) {
 double s = 0;
 for (int i = count; i > 0; i--) {
-  return s += pown((-1), i - 1) * pown(x, 2 * i - 2) / fact(2*i-2);
+  s += pown((-1), i - 1) * pown(x, 2 * i - 2) / fact(2*i-2);
   }
+  return s;
 }
